@@ -1,0 +1,62 @@
+{
+  "title": "アンケートのタイトル",
+  "explanation": "アンケートに関する説明",
+  "questionSections": {
+    "1": {
+      "sectionTitle":"セクション１",
+      "questions"   :[
+        {
+          "question": "質問",
+          "QType"   : {
+            "type"   :"回答方法",
+            "varName":"変数名",
+            "items"  :,
+            "option" :
+          }
+        },
+        {
+          "question": "",
+          "QType"   : {
+            "type"   :"",
+            "varName":"",
+            "items"  :,
+            "option" :
+          }
+        },
+        {
+          "question": "",
+          "QType"   : {
+            "type"   :"",
+            "varName":"",
+            "items"  :,
+            "option" :
+          }
+        }
+      ]
+    },
+    "2":{
+      "sectionTitle":"",
+      "questions":[
+        {
+          "question": "",
+          "QType"   : {
+            "type"   :"",
+            "varName":"",
+            "items"  :,
+            "option" :
+          }
+        },
+        {
+          "question": "",
+          "QType"   : {
+            "type"   :"",
+            "varName":"",
+            "items"  :,
+            "option" :
+          }
+        }
+      ]
+    }
+  },
+  "thanks":""
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="test.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>HelloWorld</title>
+    <script>
+    $(function() {
+      $.getJSON("questionaire.json" , function(data) {
+        console.log(data);
+      });
+    });
+    </script>
+  </head>
+  <body>
+
+  <p>a</p>
+  <!-- <label>a</label> -->
+  <select class="" name="test">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+  <!-- <div class="wbh">
+    <h3 id="wbh">this will be hidden<br>dans un cas particulier</h3>
+    <h3 id="wbd" hidden=true>and this will be displayed</h3>
+  </div> -->
+
+
+
+
+
+  </body>
+</html>
