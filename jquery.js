@@ -64,6 +64,7 @@ $(function() {
     //         $(this).prop('selectedIndex', -1);
     //     });
     // })
+    $('.age').find('input').attr('type', 'tel');
 });
 let willPopup = true;
 
