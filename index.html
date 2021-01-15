@@ -11,16 +11,16 @@
   </head>
   <body>
     <script>
-      createElements(data);
-      init();
-    // $(function() {
-    //   $.getJSON("http://web.cc.yamaguchi-u.ac.jp/~i063rb/QTest/questionaire.json", (data) => {
-    //     // document.write(code(data));
-    //     createElements(data);
-    //     init();
-    //     console.log(code(data));
-    //   });
-    // });
+      //createElements(data);
+      //init();
+     $(function() {
+       $.getJSON("questionaire.json", (data) => {
+         // document.write(code(data));
+         createElements(data);
+         init();
+         console.log(code(data));
+       });
+     });
     </script>
     <script src="jquery.js"></script>
     
