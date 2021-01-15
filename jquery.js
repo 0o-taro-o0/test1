@@ -16,31 +16,6 @@ $(function() {
 
     //submitのpost前処理
     $('.submit').on('click', function () {
-        // $('.hidden').find('input').each(function (index, element) {
-        //     switch ($(this).attr('type')) {
-        //         case 'radio':
-        //             $(this).prop('checked', false);
-        //             break;
-        //         case 'text':
-        //             $(this).val('');
-        //             break;
-        //         case 'checkbox':
-        //             $(this).prop('checked', false);
-        //             break;
-        //         default:
-        //             break;
-        //     }
-        // });
-        // $('.hidden').find('textarea').each(function (index, element) {
-        //     $(this).val('');
-        // });
-        // $('.hidden').find('select').each(function (index, element) {
-        //     $(this).prop('selectedIndex', -1);
-        // });
-        // $(this).submit();
-    });
-    $('.button').on('click', function() {
-        console.log($('.hidden').find('input'));
         $('.hidden').find('input').each(function (index, element) {
             switch ($(this).attr('type')) {
                 case 'radio':
@@ -62,7 +37,32 @@ $(function() {
         $('.hidden').find('select').each(function (index, element) {
             $(this).prop('selectedIndex', -1);
         });
-    })
+        $(this).submit();
+    });
+    // $('.button').on('click', function() {
+    //     console.log($('.hidden').find('input'));
+    //     $('.hidden').find('input').each(function (index, element) {
+    //         switch ($(this).attr('type')) {
+    //             case 'radio':
+    //                 $(this).prop('checked', false);
+    //                 break;
+    //             case 'text':
+    //                 $(this).val('');
+    //                 break;
+    //             case 'checkbox':
+    //                 $(this).prop('checked', false);
+    //                 break;
+    //             default:
+    //                 break;
+    //         }
+    //     });
+    //     $('.hidden').find('textarea').each(function (index, element) {
+    //         $(this).val('');
+    //     });
+    //     $('.hidden').find('select').each(function (index, element) {
+    //         $(this).prop('selectedIndex', -1);
+    //     });
+    // })
 });
 let willPopup = true;
 
