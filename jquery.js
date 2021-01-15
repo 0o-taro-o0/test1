@@ -37,7 +37,7 @@ $(function() {
         $('.hidden').find('select').each(function (index, element) {
             $(element).prop('selectedIndex', -1);
         });
-        $(this).submit();
+        return true;
     });
     
     // $('.button').on('click', function() {
