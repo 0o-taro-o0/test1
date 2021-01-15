@@ -1,0 +1,17 @@
+h1 {
+  color: rgb(255, 203, 203);
+}
+body{
+  /* background-color: rgb(43, 48, 59); */
+  background-color: rgb(204, 230, 226);
+}
+.red {
+  color: rgb(138, 245, 138);
+}
+.blue {
+  color:rgb(42, 98, 224);
+}
+#div2 {
+display: none;
+
+}

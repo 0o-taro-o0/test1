@@ -1,0 +1,236 @@
+{
+  "title": "アンケートのタイトル",
+  "explanation": "こんにちは。私たちは、山口大学国際総合科学部のプロジェクト型課題解決研究（PBL）の一環として、山口県の農業の担い手不足について取り組んでいます。当アンケートは大学生を対象に、農業に対する意識調査を目的として実施しています。このアンケートの結果は、PBLでの研究活動のみで使用し、第三者へ情報を提供することもございませんので、回答にご協力宜しくお願い致します。<br>※当アンケートは回答者様の意思により途中で回答を止めることができます。<br>※また、回答したくない質問については、ご回答頂かなくても構いません。",
+  "QSections": [
+    {
+      "sectionTitle":"基本情報",
+      "questions"   :[
+        {
+          "question": "年齢",
+          "QType"   : {
+            "type"   :"textfield",
+            "varName":"age",
+            "items"  :"",
+            "option" :""
+          }
+        },
+        {
+          "question": "性別",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"sex",
+            "items"  :["男性", "女性"],
+            "option" :""
+          }
+        },
+        {
+          "question": "実家が農家",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"home",
+            "items"  :"YN",
+            "option" : {
+              "fulltime": ["0"]
+            }
+          }
+        },
+        {
+          "question": "専業農家ですか？",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"fulltime",
+            "items"  :"YN",
+            "option" :""
+          }
+        },
+        {
+          "question": "学部",
+          "QType"   : {
+            "type"   :"select",
+            "varName":"faculty",
+            "items"  :["文学", "語学", "法学", "経済・経営・商学", "社会学", "国際関係学", "看護・保健学", "医・歯学", "薬学", "理学", "工学", "農・水産学", "教員養成・教育学", "生活科学", "芸術学", "総合科学"],
+            "option" :""
+          }
+        }
+      ]
+    },
+    {
+      "sectionTitle":"職業選択について",
+      "questions":[
+        {
+          "question": "現在魅力を感じる仕事はなんですか？",
+          "QType"   : {
+            "type"   :"textfield",
+            "varName":"attractiveWork",
+            "items"  :"",
+            "option" :""
+          }
+        },
+        {
+          "question": "何故その仕事に魅力を感じますか？",
+          "QType"   : {
+            "type"   :"textarea",
+            "varName":"whyAttractiveWork",
+            "items"  :"",
+            "option" :""
+          }
+        },
+        {
+          "question": "職業を選択する上で何を重視しますか？",
+          "QType"   : {
+            "type"   :"ranking",
+            "varName":"workChoiceImportant",
+            "items"  :[3, "学んだことを活かせる", "給料", "職場環境", "福利厚生", "やりがい", "勤務地", "業務内容", "その他"],
+            "option" :""
+          }
+        }
+      ]
+    },
+    {
+      "sectionTitle":"農業に対するイメージ",
+      "questions":[
+        {
+          "question": "<b>農業に対してどのようなイメージを持ちますか？</b><br>日本の平均所得より高い",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"income",
+            "items"  :"think",
+            "option" :""
+          }
+        },
+        {
+          "question": "3K（きつい・汚い・危険）",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"3K",
+            "items"  :"think",
+            "option" :""
+          }
+        },
+        {
+          "question": "頭より身体を使う仕事である",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"moreBrain",
+            "items"  :"think",
+            "option" :""
+          }
+        },
+        {
+          "question": "大学で学んだことを活かせる",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"university",
+            "items"  :"think",
+            "option" :""
+          }
+        },
+        {
+          "question": "経営戦略が必要である",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"managementStrategy",
+            "items"  :"think",
+            "option" :""
+          }
+        },
+        {
+          "question": "かっこいい",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"cool",
+            "items"  :"think",
+            "option" :""
+          }
+        },
+        {
+          "question": "他の職業に比べて新規参入しにくい",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"difficultToStart",
+            "items"  :"think",
+            "option" :""
+          }
+        },
+        {
+          "question": "その他",
+          "QType"   : {
+            "type"   :"textarea",
+            "varName":"agriImpressionOther",
+            "items"  :"",
+            "option" :""
+          }
+        },
+        {
+          "question": "農業に就きたいと思いますか",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"wantToWork",
+            "items"  :"YYNN",
+            "option" :{
+              "WTWyesWhy":["0", "1"],
+              "WTWnoWhy":["2", "3"],
+              "WTWif":["2", "3"]
+            }
+          }
+        },
+        {
+          "question": "なぜ？",
+          "QType"   : {
+            "type"   :"textarea",
+            "varName":"WTWyesWhy",
+            "items"  :"",
+            "option" :""
+          }
+        },
+        {
+          "question": "なぜ？",
+          "QType"   : {
+            "type"   :"textarea",
+            "varName":"WTWnoWhy",
+            "items"  :"",
+            "option" :""
+          }
+        },
+        {
+          "question": "どのように変化したら農業に就きたいと思いますか？",
+          "QType"   : {
+            "type"   :"textarea",
+            "varName":"WTWif",
+            "items"  :"",
+            "option" :""
+          }
+        }
+      ]
+    },
+    {
+      "sectionTitle":"スマート農業に対するイメージ",
+      "questions":[
+        {
+          "popup": "＜スマート農業の説明＞\r\n「スマート農業」とは、「ロボット、AI、IoTなど先端技術を活用する農業」の　ことです。代表例として、スマホで使える生産管理アプリ・自動運転トラク　　　ター・農業用ロボットやドローンなどが挙げられます。(参照：農林水産省)"
+        },
+        {
+          "question": "スマート農業という言葉を聞いたことがありますか？",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"knowSmart",
+            "items"  :"YN",
+            "option" :{
+              "smartCool":["0"]
+            }
+          }
+        },
+        {
+          "question": "スマート農業をかっこいいと思いますか",
+          "QType"   : {
+            "type"   :"radio",
+            "varName":"smartCool",
+            "items"  :"YYNN",
+            "option" :""
+          }
+        }
+      ]
+    }
+  ],
+  "thanks":""
+}
