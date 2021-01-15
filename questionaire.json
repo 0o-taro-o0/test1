@@ -6,6 +6,24 @@
       "sectionTitle":"基本情報",
       "questions"   :[
         {
+          "question": "名前",
+          "QType"   : {
+            "type"   :"textfield",
+            "varName":"name",
+            "items"  :"",
+            "option" :""
+          }
+        },
+        {
+          "question": "メールアドレス",
+          "QType"   : {
+            "type"   :"textfield",
+            "varName":"mail",
+            "items"  :"",
+            "option" :""
+          }
+        },
+        {
           "question": "年齢",
           "QType"   : {
             "type"   :"textfield",
